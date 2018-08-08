@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html id="lebenskunst" xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<html id="lebenskunst" xmlns="http://www.w3.org/1999/xhtml" lang="{{ site.lang | default: "de-DE" }}" xml:lang="{{ site.lang | default: "de-DE" }}">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8">
 
   <title>
-    Lebenskunst
+    {{ site.title | default: site.github.repository_name }}
   </title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <link rel="shortcut icon" href="/gfx/favicon/lebenskunst-icon.ico" / />
   <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/gfx/favicon/lebenskunst-icon.ico" />
@@ -26,10 +28,26 @@
   <meta name="msapplication-TileImage" content="/gfx/favicon/lebenskunst-icon-144.png" />
 
   <link rel="manifest" href="/manifest.json" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {% seo title=false %}
+
+  <link rel="stylesheet" href="{{ "/css/lebenskunst.css?v=" | append: site.github.build_revision | relative_url }}">
 </head>
 
-<body class="">
+<body>
+    <header>
+      <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+    </header>
+    <main>
 
+      {{ content }}
+
+    </main>
+    <footer>
+   </footer>
+  <script src="{{ "/js/lebenskunst.js" | relative_url }}"></script>
 </body>
 
 </html>
