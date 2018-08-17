@@ -1,0 +1,22 @@
+////
+/// Imports all base styles.
+/// @group Base
+/// @author Joris Karl Dzaack <hola@arebours.de>
+////
+
+@import './normalize';
+@import './fonts';
+@import './elements';
+
+::-webkit-input-placeholder {
+  color: inherit;
+}
+
+::-moz-placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: inherit;
+}
