@@ -1,0 +1,23 @@
+{
+  "name": "lebenskunst.art",
+  "version": "0.0.1",
+  "repository": "git@bitbucket.org:lebenskunst/lebenskunst-web.git",
+  "contributors": [
+    {
+      "name": "Joris Karl Dzaack",
+      "email": "hola@arebours.de",
+      "url": "http://arebours.de/"
+    },
+    {
+      "name": "Torsten Geucke",
+      "email": "t.geucke@gmail.com"
+    }
+  ],
+  "private": true,
+  "dependencies": {
+    "bourbon": "^5.1.0",
+    "quantity-queries": "^0.4.0",
+    "sass-mediaqueries": "^1.6.1"
+  }
+}
+
